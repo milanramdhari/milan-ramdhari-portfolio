@@ -1,8 +1,9 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa6'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6'
 
 const socials = [
   { label: 'GitHub', href: 'https://github.com/milanramdhari', Icon: FaGithub },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/milanramdhari/', Icon: FaLinkedin },
+  { label: 'Email', href: 'mailto:milanramdhari4545@gmail.com', Icon: FaEnvelope },
 ]
 
 export default function SocialIcons() {
