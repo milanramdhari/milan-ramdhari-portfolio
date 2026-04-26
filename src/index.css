@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+}
+
+body {
+  min-width: 320px;
+}
