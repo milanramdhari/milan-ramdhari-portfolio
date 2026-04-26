@@ -18,7 +18,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-slate-50/80 backdrop-blur border-b border-gray-100">
       <nav
         className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between"
         aria-label="Main navigation"
@@ -28,7 +28,7 @@ export default function Navbar() {
           className="font-mono text-[#2563eb] font-semibold text-base tracking-tight focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2563eb] rounded"
           onClick={() => setOpen(false)}
         >
-          milan.dev
+          milanramdhari.com
         </NavLink>
 
         {/* Desktop links */}
@@ -55,7 +55,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4">
+        <div className="md:hidden border-t border-gray-100 bg-slate-50 px-6 py-4">
           <ul className="flex flex-col gap-4 list-none m-0 p-0">
             {navLinks.map(({ to, label }) => (
               <li key={to}>

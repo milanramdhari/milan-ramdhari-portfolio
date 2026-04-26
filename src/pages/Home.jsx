@@ -18,7 +18,7 @@ const fadeRight = {
 
 export default function Home() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center gap-12">
+    <section className="max-w-6xl mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center gap-16">
       {/* Left: text content */}
       <MotionDiv className="flex-1 flex flex-col gap-6" {...fadeUp}>
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
@@ -62,7 +62,7 @@ export default function Home() {
         <img
           src={portfolio}
           alt="Milan Ramdhari"
-          className="w-56 h-56 rounded-2xl object-cover shadow-md"
+          className="w-72 h-72 md:w-80 md:h-80 rounded-2xl object-cover shadow-md"
         />
       </MotionDiv>
     </section>
