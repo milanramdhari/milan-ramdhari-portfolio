@@ -21,30 +21,25 @@ export default function Home() {
     <section className="max-w-6xl mx-auto px-6 py-24 flex flex-col-reverse md:flex-row items-center gap-16">
       {/* Left: text content */}
       <MotionDiv className="flex-1 flex flex-col gap-6" {...fadeUp}>
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+        {/* <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
           Hey there, I&apos;m Milan! 👋
-        </h1>
+        </h1> */}
         <p className="text-gray-600 text-lg leading-relaxed">
-          I&apos;m a software engineer passionate about building products that are{' '}
-          <a href="#" className="text-[#2563eb] hover:underline">
-            fast
-          </a>
-          ,{' '}
-          <a href="#" className="text-[#2563eb] hover:underline">
-            accessible
-          </a>
-          , and genuinely useful. I love working at the intersection of design and engineering.
+          I&apos;m a software engineer and AI researcher building at the intersection of full-stack
+          development and Large Language Models. Currently, I&apos;m focused on architecting
+          intelligent, scalable systems that translate complex AI logic into seamless user
+          experiences.
         </p>
         <p className="text-gray-600 text-lg leading-relaxed">
-          When I&apos;m not coding, you&apos;ll find me exploring{' '}
-          <a href="#" className="text-[#2563eb] hover:underline">
-            open-source projects
-          </a>
-          , writing about things I&apos;ve learnt on my{' '}
-          <a href="/blog" className="text-[#2563eb] hover:underline">
-            blog
-          </a>
-          , or experimenting with new technologies.
+          Previously, I&apos;ve spent my time developing end-to-end RAG frameworks, observability
+          tools for AI pipelines, and automated testing for conversational platforms. My background
+          is rooted in bridging the gap between robust backend engineering and intuitive frontend
+          design.
+        </p>
+        <p className="text-gray-600 text-lg leading-relaxed">
+          Looking ahead, I&apos;m excited to apply my expertise in LLM orchestration and full-stack
+          engineering to build the next generation of fast, reliable, and high-impact products within
+          high-velocity environments.
         </p>
         <div>
           <Button

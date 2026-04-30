@@ -1,31 +1,48 @@
-const timeline = [
+const timelineByYear = [
   {
     year: '2026',
-    event:
-      'Presenting ETD RAG capstone at VTURCS Spring 2026. Graduating from Virginia Tech, BS Computer Science, minor in Mathematics.',
-  },
-  {
-    year: '2025 – 2026',
-    event:
-      'AI Research Assistant at Virginia Tech. Built a RAG pipeline over 400+ academic documents using ChromaDB, Phi3, and Llama3 running locally via Ollama.',
-  },
-  {
-    year: '2025 (Fall)',
-    event:
-      'Software Engineering Co-op at Viven.ai. Built a model evaluation dashboard comparing a new RL-trained model against production across latency, accuracy, and qualitative behavior. Ran 90+ automated test scenarios with Playwright.',
-  },
-  {
-    year: '2025 (Summer)',
-    event:
-      'Software Engineering Intern at Viven.ai, Santa Clara. Shipped Next.js APIs, scheduling workflows, and a real-time call agent using Twilio and WebSockets.',
+    entries: [
+      {
+        title: 'May 2026 — Graduation',
+        description:
+          'Graduating from Virginia Polytechnic Institute and State University with a B.S. in Computer Science and a Minor in Mathematics.',
+      },
+      {
+        title: 'March 2026 — Traceroot (Failure Forensics Platform)',
+        description:
+          'Started building an observability and failure analysis platform for multi-stage LLM pipelines, focused on tracing prompts, latency, outputs, and confidence metrics across AI workflows.',
+      },
+      {
+        title: 'January 2026 — AI Research Assistant',
+        description:
+          'Began developing an end-to-end RAG system for semantic search and question answering over 400+ academic documents.',
+      },
+    ],
   },
   {
     year: '2025',
-    event: 'Teaching Assistant for Data Structures and Algorithms at Virginia Tech.',
-  },
-  {
-    year: '2022',
-    event: 'Started at Virginia Tech.',
+    entries: [
+      {
+        title: 'December 2025 — Resume Tailor Agent',
+        description:
+          'Built an AI-powered resume optimization tool using the Gemini API to semantically rewrite LaTeX resumes for stronger ATS alignment while preserving formatting.',
+      },
+      {
+        title: 'September 2025 — Software Engineering Co-op at Viven.ai',
+        description:
+          'Developed internal evaluation dashboards for comparing model performance, latency, and qualitative behavior across AI systems.',
+      },
+      {
+        title: 'July 2025 — Undergraduate Teaching Assistant',
+        description:
+          'Mentored 100+ students in Data Structures and Algorithms, helping teach concepts ranging from linked lists and trees to graph algorithms.',
+      },
+      {
+        title: 'June 2025 — Software Engineering Intern at Viven.ai',
+        description:
+          'Worked on backend APIs, automation workflows, and real-time conversational AI systems powered by Twilio and WebSockets.',
+      },
+    ],
   },
 ]
 
@@ -38,44 +55,58 @@ export default function About() {
 
       <div className="flex flex-col gap-4 text-gray-600 text-base leading-relaxed">
         <p>
-          I&apos;m Milan, a CS student at{' '}
-          <span className="text-gray-900 font-medium">Virginia Tech</span> graduating this May.
-          I&apos;ve spent the last few years doing software internships, research, and side
-          projects, mostly in the full-stack and AI space.
+          I&apos;m a software engineer and AI researcher focused on building fast, reliable, and
+          practical AI systems.
         </p>
         <p>
-          At <span className="text-gray-900 font-medium">Viven.ai</span> I worked on two separate
-          stints: one building Next.js APIs and a real-time call agent with Twilio and WebSockets,
-          another writing 90+ automated test scenarios with Playwright and building an evaluation
-          dashboard to compare two versions of an RL-trained model. That second one was interesting
-          because you&apos;re not just checking if something works — you&apos;re trying to decide if
-          it&apos;s actually better.
+          Currently, I&apos;m an AI Research Assistant at Virginia Polytechnic Institute and State
+          University, where I&apos;m building an end-to-end RAG system for semantic search and
+          question answering over large academic datasets. My work focuses on retrieval quality,
+          latency optimization, and scalable AI infrastructure.
         </p>
         <p>
-          Right now I&apos;m a research assistant at Virginia Tech building a RAG system over 400+
-          electronic theses. Local LLMs, ChromaDB, multi-query decomposition. It runs entirely on
-          your machine, which I find more satisfying than it probably should.
+          Previously, I worked at{' '}
+          <span className="text-gray-900 font-medium">Viven.ai</span>, building backend APIs,
+          real-time conversational AI systems with Twilio and WebSockets, and internal evaluation
+          tools for analyzing model performance and behavior in production environments.
         </p>
         <p>
-          I also built a resume tailor agent on the side that rewrites LaTeX resumes for specific
-          job descriptions using Gemini. Mostly because I needed it myself.
+          I enjoy building tools that solve real engineering problems. Recently, I&apos;ve been
+          developing an observability platform for multi-stage LLM pipelines that traces prompts,
+          outputs, latency, and confidence scores to help debug AI failures and hallucinations. I
+          also built an AI-powered resume optimization agent that semantically rewrites LaTeX
+          resumes for stronger ATS alignment while preserving formatting.
+        </p>
+        <p>
+          Outside of coding, I enjoy mentoring students, exploring AI systems, and building products
+          at the intersection of software engineering and machine learning.
         </p>
         <p className="text-gray-900 font-medium">
-          Looking for full-stack or AI engineering roles after graduation.
+          I&apos;m graduating in May 2026 with a B.S. in Computer Science and a minor in
+          Mathematics, and I&apos;m excited to continue building high-impact AI-driven products.
         </p>
       </div>
 
       <div>
         <h2 className="text-xl font-semibold text-gray-900 mb-6">Timeline</h2>
-        <ol className="relative border-l border-gray-200 flex flex-col gap-8 list-none p-0 m-0">
-          {timeline.map(({ year, event }) => (
-            <li key={year} className="ml-6 relative">
-              <span className="absolute -left-[31px] mt-1.5 h-3 w-3 rounded-full bg-[#2563eb]" />
-              <time className="font-mono text-xs text-gray-400">{year}</time>
-              <p className="text-gray-700 mt-1 leading-relaxed">{event}</p>
-            </li>
+        <div className="flex flex-col gap-12">
+          {timelineByYear.map(({ year, entries }) => (
+            <div key={year}>
+              <h3 className="font-mono text-lg font-semibold text-gray-900 mb-4">{year}</h3>
+              <ul className="relative border-l border-gray-200 flex flex-col gap-8 list-none p-0 m-0">
+                {entries.map(({ title, description }) => (
+                  <li key={title} className="ml-6 relative">
+                    <span className="absolute -left-[31px] mt-1.5 h-3 w-3 rounded-full bg-[#2563eb]" />
+                    <p className="font-semibold text-gray-900 text-sm sm:text-base">{title}</p>
+                    <p className="text-gray-600 mt-1.5 leading-relaxed text-sm sm:text-base">
+                      {description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ol>
+        </div>
       </div>
     </section>
   )
