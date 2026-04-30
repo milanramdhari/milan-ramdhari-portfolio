@@ -1,14 +1,14 @@
-import uses from '../data/uses'
+import gym from '../data/gym'
 
-export default function Uses() {
+export default function Gym() {
   return (
     <section className="max-w-2xl mx-auto px-6 py-20">
       <header className="mb-10">
-        <h1 className="text-3xl font-bold text-gray-900">Uses</h1>
-        <p className="text-gray-500 mt-2">My current hardware, software, and tools.</p>
+        <h1 className="text-3xl font-bold text-gray-900">Gym</h1>
+        <p className="text-gray-500 mt-2">My current gym routine.</p>
       </header>
       <div className="flex flex-col gap-10">
-        {uses.map(({ category, items }) => (
+        {gym.map(({ category, items }) => (
           <div key={category}>
             <h2 className="text-base font-semibold text-gray-900 mb-4">{category}</h2>
             <ul className="flex flex-col gap-4 list-none p-0 m-0">
