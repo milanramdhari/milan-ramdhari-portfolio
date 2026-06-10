@@ -28,13 +28,14 @@ export default function Home() {
               Hi, I&apos;m Milan.
             </h1>
             <p className="text-lg text-gray-500 font-normal">
-              Software engineer &amp; CS student, Virginia Tech &rsquo;26.
+              Software engineer &amp; CS grad, Virginia Tech &rsquo;26.
             </p>
           </div>
 
           <p className="text-gray-600 text-base leading-[1.75] max-w-lg">
-            I build full-stack systems and AI tools. Most recently: real-time conversational AI
-            and evaluation tooling at{' '}
+            I build full-stack systems and AI tools. Most recently: a RAG pipeline over 400+
+            academic documents at VT&apos;s research lab, and real-time conversational AI and
+            evaluation tooling at{' '}
             <a
               href="https://viven.ai"
               target="_blank"
@@ -43,16 +44,17 @@ export default function Home() {
             >
               Viven.ai
             </a>
-            , and a RAG pipeline over 400+ academic documents at VT&apos;s research lab.
+            .
           </p>
 
           <p className="text-gray-600 text-base leading-[1.75] max-w-lg">
-            Looking for full-stack or AI engineering roles after graduation this May.
+            Recent projects: Token Gate (AI API gateway with rate limiting) and Trace Root
+            (LLM pipeline observability). Open to full-stack and AI engineering roles.
           </p>
 
           <div className="pt-1">
             <Button
-              href="https://drive.google.com/file/d/1-uPPYE9OH_GONwQfm34bN3_xgugth8pj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XUEGYzU89Pf-skP_qxup-I_8R8S1bioR/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

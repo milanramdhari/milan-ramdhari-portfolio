@@ -3,19 +3,24 @@ const timelineByYear = [
     year: '2026',
     entries: [
       {
-        title: 'May 2026 — Graduation',
+        title: 'June 2026: Token Gate',
+        description:
+          'Building a self-hostable AI API gateway that routes inference across LLM providers with Redis-backed rate limiting, JWT auth, and a transactional credit-metering system.',
+      },
+      {
+        title: 'May 2026: Graduation',
         description:
           'B.S. Computer Science, minor in Mathematics. Virginia Polytechnic Institute and State University.',
       },
       {
-        title: 'March 2026 — Traceroot',
+        title: 'March 2026: Trace Root',
         description:
-          'Building an observability and failure analysis platform for multi-stage LLM pipelines — tracing prompts, latency, outputs, and confidence metrics.',
+          'Observability platform for LLM pipelines tracing execution, latency, token usage, and intermediate outputs. Includes root-cause analysis using backward trace evaluation and LLM-as-a-judge scoring.',
       },
       {
-        title: 'January 2026 — AI Research Assistant',
+        title: 'January 2026: AI Research Assistant',
         description:
-          'End-to-end RAG system for semantic search and question answering over 400+ academic documents at Virginia Tech.',
+          'End-to-end RAG system for semantic search and question answering over 400+ academic documents at Virginia Tech. Tuned chunking strategies, embedding pipelines, and Chroma vector database parameters.',
       },
     ],
   },
@@ -23,24 +28,14 @@ const timelineByYear = [
     year: '2025',
     entries: [
       {
-        title: 'December 2025 — Resume Tailor Agent',
+        title: 'Jun - Nov 2025: Software Engineering Intern, Viven.ai',
         description:
-          'AI resume optimization tool using the Gemini API to semantically rewrite LaTeX resumes for stronger ATS alignment while preserving formatting.',
+          'Built Next.js APIs with Python Flask for RAG workflows and AWS SES email delivery, an evaluation dashboard comparing RL-trained and production models, 90+ Playwright test scenarios, and a real-time voice agent with Twilio and WebSockets.',
       },
       {
-        title: 'September 2025 — Software Engineering Co-op, Viven.ai',
+        title: 'Jul - Sep 2025: Undergraduate Teaching Assistant',
         description:
-          'Built internal evaluation dashboards comparing model performance, latency, and qualitative behavior across AI systems. 90+ automated test scenarios with Playwright.',
-      },
-      {
-        title: 'July 2025 — Undergraduate Teaching Assistant',
-        description:
-          'Data Structures and Algorithms at Virginia Tech. Mentored 100+ students.',
-      },
-      {
-        title: 'June 2025 — Software Engineering Intern, Viven.ai',
-        description:
-          'Backend APIs, automation workflows, and real-time conversational AI systems powered by Twilio and WebSockets.',
+          'Data Structures and Algorithms at Virginia Tech. Hosted weekly office hours for 100+ students and graded 50+ assignments.',
       },
     ],
   },
@@ -72,30 +67,32 @@ export default function About() {
               and practical AI systems.
             </p>
             <p>
-              Currently, I&apos;m an AI Research Assistant at Virginia Tech, building an end-to-end
-              RAG system for semantic search and question answering over large academic datasets.
-              My work focuses on retrieval quality, latency optimization, and scalable AI
-              infrastructure.
+              Most recently, I was an AI Research Assistant at Virginia Tech, building an
+              end-to-end RAG system for semantic search and question answering over 400+ academic
+              documents. My work focused on retrieval quality, latency optimization, and tuning
+              Chroma vector database pipelines.
             </p>
             <p>
-              Previously, I worked at{' '}
-              <span className="text-gray-900 font-medium">Viven.ai</span>, building backend APIs,
-              real-time conversational AI systems with Twilio and WebSockets, and internal
-              evaluation tools for analyzing model performance and behavior in production.
+              Before that, I worked at{' '}
+              <span className="text-gray-900 font-medium">Viven.ai</span>, building backend APIs
+              with Next.js and Python Flask for RAG workflows, an evaluation dashboard comparing
+              RL-trained and production models, and a real-time voice agent using Twilio and
+              WebSockets.
             </p>
             <p>
-              I enjoy building tools that solve real engineering problems. Recently I&apos;ve been
-              developing an observability platform for multi-stage LLM pipelines — tracing prompts,
-              outputs, latency, and confidence scores to help debug AI failures and hallucinations.
-              I also built an AI-powered resume optimization agent that semantically rewrites LaTeX
-              resumes for stronger ATS alignment while preserving formatting.
+              I enjoy building tools that solve real engineering problems. Recent projects:{' '}
+              <span className="text-gray-900 font-medium">Token Gate</span>, a self-hostable AI
+              API gateway with Redis-backed rate limiting and credit metering, and{' '}
+              <span className="text-gray-900 font-medium">Trace Root</span>, an observability
+              platform for debugging multi-stage LLM pipelines using backward trace evaluation and
+              LLM-as-a-judge scoring.
             </p>
             <p>
               Outside of engineering, I enjoy mentoring students, reading about AI systems, and
               building products where software and machine learning genuinely intersect.
             </p>
             <p className="text-gray-900 font-medium">
-              Graduating May 2026 with a B.S. in Computer Science and a minor in Mathematics.
+              Graduated May 2026 with a B.S. in Computer Science and a minor in Mathematics.
               Open to full-stack and AI engineering roles.
             </p>
           </div>
